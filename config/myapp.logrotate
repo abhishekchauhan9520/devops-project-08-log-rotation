@@ -1,0 +1,10 @@
+# Install as /etc/logrotate.d/myapp
+/var/log/myapp/*.log {
+    daily
+    rotate 7
+    missingok
+    notifempty
+    compress
+    delaycompress
+    copytruncate
+}
